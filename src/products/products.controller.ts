@@ -20,7 +20,7 @@ export class ProductsController {
 
   @Get(":term")
   findOne(@Param('term') term) {
-    return this.productsService.findOne(term);
+    return this.productsService.findOnePlane(term);
   }
 
   @Delete(':id')
